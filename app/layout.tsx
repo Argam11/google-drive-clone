@@ -1,15 +1,13 @@
-import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import type {Metadata} from 'next';
+import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
-import { Poppins } from 'next/font/google';
+import {Poppins} from 'next/font/google';
 
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-poppins'
+  variable: '--font-poppins',
 });
-
-console.log({poppins});
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,17 +25,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-    <body
-      className={`${poppins.variable} font-poppins  antialiased`}
-    >
-    {children}
-    </body>
+      <body className={`${poppins.variable} font-poppins  antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
