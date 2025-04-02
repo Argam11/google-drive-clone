@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 
 const Layout = ({children}: {children: React.ReactNode}) => {
+  console.log(11);
+  
   return (
     <div className="flex min-h-screen">
       <section className="bg-[#EA6365] p-10 w-[50%]">
