@@ -9,11 +9,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     container: node:20
-  steps:
-    - uses: actions/checkout@v4
-    - name: Install dependencies
-      run: yarn
-    - name: Run lint
-      run: yarn lint
-    - name: Run tests
-      run: yarn test
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: yarn
+      - name: Run lint
+        run: yarn lint
+      - name: Run tests
+        run: yarn test
