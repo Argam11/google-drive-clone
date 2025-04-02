@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Layout = ({children}: {children: React.ReactNode}) => {
   console.log(11);
-  
+
   return (
     <div className="flex min-h-screen">
       <section className="bg-[#EA6365] p-10 w-[50%]">
@@ -26,7 +26,7 @@ const Layout = ({children}: {children: React.ReactNode}) => {
               This is a place where you can store all your documents.
             </p>
           </div>
-          <div className='flex justify-center mt-30'>
+          <div className="flex justify-center mt-30">
             <Image
               src="/file.svg"
               alt="logo"
